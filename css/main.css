@@ -1,0 +1,226 @@
+/* Reset */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+form,
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+
+    -webkit-box-sizing: border-box;
+
+    box-sizing: border-box;
+}
+
+/* Custom Properties */
+
+:root {
+    /* Colours */
+
+      /* Text */
+      --heading-color: hsla(22, 15%, 31%, 1);
+      --body-color: hsla(37, 17%, 70%, 1);
+
+      /* Backgrounds */
+      --bg-color: hsla(38, 83%, 90%, 1);
+      --alt-bg-color: hsla(0, 0%, 96%, 1);
+
+      /* Buttons */
+      --primary-btn-color: hsla(168, 70%, 78%, 1);
+      --secondary-btn-color: hsla(187, 62%, 55%, 1);
+
+      /* Links */
+      --link-color: hsla(200, 100%, 50%, 1);
+      --link-hover: hsla(200, 100%, 65%, 1);
+      --visited-link-color: hsla(240, 100%, 75%, 1);
+
+      --white: hsla(0, 0%, 100%, 1);
+      --black: hsla(0, 0%, 0%, 1);
+
+      --dark-gray: hsla(0, 0%, 25%, 1);
+      --dark-gray-tint: hsla(0, 0%, 35%, 1);
+      --dark-gray-shade: hsla(0, 0%, 15%, 1);
+
+      --light-gray: hsla(0, 0%, 75%, 1);
+      --light-gray-tint: hsla(0, 0%, 85%, 1);
+      --light-gray-shade: hsla(0, 0%, 65%, 1);
+
+    /* Typography */
+
+      --heading-font: "Overpass", sans-serif;
+
+      --body-font: "IBM Plex Sans", sans-serif;
+
+      --display-font: "Crimson Pro", serif;
+}
+
+/* Breakpoints */
+
+  /* Small mobile */
+  --sm: 320px;
+
+  /* Medium mobile */
+  --md: 375px;
+
+  /* Large mobile */
+  --lg: 425px;
+
+  /* Small tablet */
+  --tab-sm: 600px;
+
+  /* Large tablet */
+  --tab-lg: 825px;
+
+  /* Laptop */
+  --lap: 1024px;
+
+  /* Desktop */
+  --desk: 1440px;
+
+/* Page Orientations */
+
+  /* Small Mobile Portrait */
+  @media (max-width: 320px) and (orientation: portrait) {
+  }
+
+  /* Small Mobile Landscape */
+  @media (max-width: 320px) and (orientation: landscape) {
+  }
+
+  /* Medium Mobile Portrait */
+  @media (max-width: 375px) and (orientation: portrait) {
+  }
+
+  /* Medium Mobile Landscape */
+  @media (max-width: 375px) and (orientation: landscape) {
+  }
+
+  /* Small Tablet Portrait */
+  @media (min-width: 600px) and (orientation: portrait) {
+  }
+
+  /* Small Tablet Landscape */
+  @media (min-width: 600px) and (orientation: landscape) {
+  }
+
+  /* Medium Tablet Portrait */
+  @media (min-width: 768px) and (orientation: portrait) {
+  }
+
+  /* Medium Tablet Landscape */
+  @media (min-width: 768px) and (orientation: landscape) {
+  }
+
+  /* Large Desktop Portrait */
+  @media (min-width: 1440px) and (orientation: portrait) {
+  }
+
+  /* Large Desktop Landscape */
+  @media (min-width: 1440px) and (orientation: landscape) {
+  }
+
+/* Base Styles */
+
+body {
+
+    background-color: var(--bg-color);
+    margin: 0;
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--body-color);
+}
+
+a:link {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-link-color);
+}
+
+a:hover, 
+a:active {
+
+  animation: grow 0.5s ease-in-out;
+}
+
+@keyframes grow {
+  50% { 
+    transform: scale(1.2);
+  }
+}
+
+a:active {
+  color: var(--white);
+}
+
+/* Layout */
+
+.layout-flex {
+  display: flex;
+}
+
+.layout-grid {
+  display: grid;
+}
+
+/* Components */
+
+.header {
+}
+
+.footer {
+}
+
+/* Pages */
+
+.home {
+}
+
+/* Sm Mobile Portrait */
+
+@media (max-width: 320px) and (orientation: portrait) {
+    .base-styles {
+        .header {
+        }
+    }
+}
+
+/* Components */
+
+.header {
+}
+
+.footer {
+}
+
+/* Pages */
+
+.homepage {
+}
+
+/* Helpers */
+
+.helpers {
+}

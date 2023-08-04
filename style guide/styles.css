@@ -1,0 +1,83 @@
+/* Reset box model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Margins and padding */  
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Default line height */
+body {
+  line-height: 1.5;
+}
+
+/* Remove list styling */
+ol, ul {
+  list-style: none; 
+}
+
+body {
+  background-color: #f7f0e4;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5vw; /* scales relative to viewport */
+}
+
+h1, h2 {
+  font-family: 'Overpass', sans-serif;
+  color: #78684a; 
+}
+
+blockquote {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+}
+
+.content-area {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+footer {
+  font-size: 0.875rem;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+blockquote {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+}
+
+.button {
+  background-color: #A3E3E8;
+  color: #78684a;
+  padding: 1rem 2rem; // 16px 32px;
+  border-radius: 4px; 
+}
